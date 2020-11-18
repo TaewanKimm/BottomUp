@@ -21,12 +21,18 @@ function GameRecordPage(props) {
     useEffect(() => {
         async function getUserData(){
             const userInfo = await getManagerInfo(managerName)
+            console.log(managerName)
             setUserLevel(userInfo.data.level)
+            console.log(userInfo)
             const careerHighTier = await getCareerHighTier(userInfo.data.accessId)
+            console.log(careerHighTier)
             setTier(getDivision(careerHighTier.data))
-            const matchID = await getMatchID(userInfo.data.accessId)
-            const promises = matchID.data.map(getMatchData);
+            const matchID = await getMatchID(userInfo.data.accessId) || [];
+            console.log(matchID)
+
+            const promises = matchID.data.map(getMatchData) || [];
             const temp = await Promise.all(promises);
+            console.log("temp:", temp)
             let allMatches = []
             temp.map((match) => {
                 allMatches.push(match.data[0])

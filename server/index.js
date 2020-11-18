@@ -1,11 +1,9 @@
 const express = require('express')
-const port = process.env.PORT || 5000
+const port =  process.env.PORT || 5000
 const cors = require('cors')
 
 const asyncify = require('express-asyncify');
 const app = asyncify(express());
-
-
 app.use(cors())  // cors(*)
 
 

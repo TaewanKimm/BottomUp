@@ -7,4 +7,7 @@
 ![](https://images.velog.io/images/rito/post/4d2ce73d-abfe-4f5a-9d43-97c70704941b/image.png)
 
 * ## 경기 상세
-![](https://images.velog.io/images/rito/post/731daf60-2844-4f19-8945-a76e51f00898/image.png)
+![](https://images.velog.io/images/rito/post/bdcf1da5-791c-4895-906a-2aa245d3da3c/image.png)
+
+* ## 선수 상세
+![](https://images.velog.io/images/rito/post/0e4f187b-dcf8-4de3-9d39-5dc0a3631594/image.png)
